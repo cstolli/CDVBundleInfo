@@ -24,3 +24,6 @@ RoadMap:
 1. Make it more proper, optimize/streamline client-app interface.
 2. Add more plist info to more objects/properties (i.e. Icons.small, Icons.2x, Options.blah, Whatever.etc...)
 3. Get it included with cordova by default, cuz it really should be there.
+=======
+A simple cordova IOS plugin for getting the Version number and Build number from XCode settings.
+
