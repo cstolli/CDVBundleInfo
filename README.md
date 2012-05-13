@@ -1,7 +1,7 @@
 AppInfoGap
 ==========
 
-A simple cordova IOS plugin for getting the Version number and Build number from XCode settings.
+A simple cordova IOS plugin for getting the Version number and Build number from XCode settings, and using them in Javascript/HTML.
 
 Often in a cordova app, you want to have an "about" type screen, or a copyright string with version and build number. Remembering to update the build number in XCode and in your HTML/Javascript is whack, so I did this to get the ball rolling.  It lets you grab those values and use them in your javascript... voila, guaranteed accurate revision/build numbers in your Javascript/HTML.
 
