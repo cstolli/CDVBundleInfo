@@ -22,7 +22,7 @@ Installation:
 3. Copy "cdvbundleinfo.js" into your www folder and reference it in your HTML.
 
 
-To Use AppInfoGap:
+To Use CDVBundleInfo:
 -----------------
 1. in the OnDeviceReady event, add this code: "CDVBundleInfo.init();"
 2. add a function to your javascript called "BICallBack". 
@@ -30,7 +30,7 @@ To Use AppInfoGap:
 4. you can also reference the Version object in your user events, or any other time after the AICallBack function has been called by the plugin.
 
 
-To Improve AppInfoGap:
+To Improve CDVBundleInfo:
 ---------------------
 1. just clonefork the repo to your gitnode rubygem and start coding.  seriously just pull this whole pile, open it in xcode, start coding.  ping me or notify me or whatever the f you do so I can add you for merges to the branchtrunk code tree.
 
