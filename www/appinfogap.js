@@ -1,23 +1,21 @@
 /**
- * AppInfoGap.js
+ * CDVBundleInfo.js
  *  
  * Cordova AppInfoGap Instance plugin
  * Copyright (c) Chris Stoll 2012
  *
  */
 
-var Version = {revision : "", build : ""};
+var BundleInfo = {revision : "", build : "", bundleDisplayName:"", bundleIconUri:"", bundleIdentifier:""};
 
-var AppInfo = {
+var CDVBundleInfo = {
     
     set_values : function (value) {
         //console.log(value);
-        var js = JSON.parse(value);
-        Version.build = js.build;
-        Version.revision = js.revision;
-       //console.log(r);
-        //console.log(Version.build);
-        AICallBack(js);
+        BundleInfo = JSON.parse(value);
+        BundleInfo.bundleIconUri = "data:image/png;base64," + BundleInfo.bundleIconUri;
+        //console.log(BundleInfo.bundleDisplayName);
+        BICallBack();
     },
     
     set_error : function (value) {
@@ -32,7 +30,7 @@ var AppInfo = {
     
     init : function () {
         var types=[];
-        cordova.exec(this.set_values, this.set_error, "AppInfoGap", "getVersion", types);
+        cordova.exec(this.set_values, this.set_error, "CDVBundleInfo", "getVersion", types);
     }
    
 };

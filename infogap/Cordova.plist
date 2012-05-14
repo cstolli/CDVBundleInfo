@@ -24,8 +24,8 @@
 	<array/>
 	<key>Plugins</key>
 	<dict>
-		<key>AppInfoGap</key>
-		<string>AppInfoGap</string>
+		<key>CDVBundleInfo</key>
+		<string>CDVBundleInfo</string>
 		<key>Compass</key>
 		<string>CDVLocation</string>
 		<key>Accelerometer</key>

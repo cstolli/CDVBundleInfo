@@ -38,9 +38,10 @@
 		834C2706155EEAF9009A9C9E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834C2705155EEAF9009A9C9E /* MainViewController.m */; };
 		834C2708155EEAF9009A9C9E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834C2707155EEAF9009A9C9E /* MainViewController.xib */; };
 		834C270C155EEAF9009A9C9E /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 834C270B155EEAF9009A9C9E /* verify.sh */; };
-		834C2719155EECF1009A9C9E /* AppInfoGap.m in Sources */ = {isa = PBXBuildFile; fileRef = 834C2718155EECF1009A9C9E /* AppInfoGap.m */; };
+		834C2719155EECF1009A9C9E /* CDVBundleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 834C2718155EECF1009A9C9E /* CDVBundleInfo.m */; };
 		834C271B155EED92009A9C9E /* www in Resources */ = {isa = PBXBuildFile; fileRef = 834C271A155EED92009A9C9E /* www */; };
 		834C2723155F3150009A9C9E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 834C2722155F3150009A9C9E /* README.md */; };
+		834C27301560DC7D009A9C9E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 834C272E1560DC2A009A9C9E /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,10 +82,12 @@
 		834C2707155EEAF9009A9C9E /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		834C270A155EEAF9009A9C9E /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		834C270B155EEAF9009A9C9E /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
-		834C2716155EEB40009A9C9E /* AppInfoGap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppInfoGap.h; path = Classes/AppInfoGap.h; sourceTree = "<group>"; };
-		834C2718155EECF1009A9C9E /* AppInfoGap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppInfoGap.m; path = Classes/AppInfoGap.m; sourceTree = "<group>"; };
+		834C2716155EEB40009A9C9E /* CDVBundleInfo.h */ = {isa = PBXFileReference; name = CDVBundleInfo.h; path = Classes/CDVBundleInfo.h; sourceTree = "<group>"; };
+		834C2718155EECF1009A9C9E /* CDVBundleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVBundleInfo.m; path = Classes/CDVBundleInfo.m; sourceTree = "<group>"; };
 		834C271A155EED92009A9C9E /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		834C2722155F3150009A9C9E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		834C272C1560DC1F009A9C9E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		834C272E1560DC2A009A9C9E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 		834C26A8155EEAF8009A9C9E = {
 			isa = PBXGroup;
 			children = (
+				834C272E1560DC2A009A9C9E /* Default.png */,
+				834C272C1560DC1F009A9C9E /* Default@2x.png */,
 				834C2722155F3150009A9C9E /* README.md */,
 				834C271A155EED92009A9C9E /* www */,
 				834C26D4155EEAF9009A9C9E /* infogap */,
@@ -263,8 +268,8 @@
 		834C2709155EEAF9009A9C9E /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				834C2718155EECF1009A9C9E /* AppInfoGap.m */,
-				834C2716155EEB40009A9C9E /* AppInfoGap.h */,
+				834C2718155EECF1009A9C9E /* CDVBundleInfo.m */,
+				834C2716155EEB40009A9C9E /* CDVBundleInfo.h */,
 				834C270A155EEAF9009A9C9E /* README */,
 			);
 			name = Plugins;
@@ -343,6 +348,7 @@
 				834C270C155EEAF9009A9C9E /* verify.sh in Resources */,
 				834C271B155EED92009A9C9E /* www in Resources */,
 				834C2723155F3150009A9C9E /* README.md in Resources */,
+				834C27301560DC7D009A9C9E /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +378,7 @@
 				834C26DB155EEAF9009A9C9E /* main.m in Sources */,
 				834C2703155EEAF9009A9C9E /* AppDelegate.m in Sources */,
 				834C2706155EEAF9009A9C9E /* MainViewController.m in Sources */,
-				834C2719155EECF1009A9C9E /* AppInfoGap.m in Sources */,
+				834C2719155EECF1009A9C9E /* CDVBundleInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

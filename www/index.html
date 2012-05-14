@@ -5,6 +5,22 @@
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 	<meta charset="utf-8">
+    <style>
+        .gloss {
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.2)));
+            height: 28px;
+            width: 57px;
+            position: relative;
+            -webkit-border-top-right-radius: 8px;
+            -webkit-border-top-left-radius: 8px;
+            -webkit-border-bottom-right-radius: 25px 4px;
+            -webkit-border-bottom-left-radius: 20px 4px;
+            z-index: 100;
+            position: absolute;
+            -webkit-box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.6);
+        }
+        #iconDiv{position:relative;}
+    </style>
     <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
     <script type="text/javascript" charset="utf-8" src="appinfogap.js"></script>
     <script type="text/javascript">
@@ -14,14 +30,17 @@
         document.addEventListener("deviceready", onDeviceReady, false);
 	}
 	
-    function AICallBack()
+    function BICallBack()
     {
-        document.getElementById("version").innerHTML = "Version: " + Version.revision + ", Build Number: " + Version.build;
+        document.getElementById("version").innerHTML = "Version: " + BundleInfo.version + ", Build Number: " + BundleInfo.build;
+        document.getElementById("icon").src = BundleInfo.bundleIconUri;
+        document.getElementById("bundlename").innerHTML = BundleInfo.bundleDisplayName;
+        document.getElementById("bundleid").innerHTML = BundleInfo.bundleId;
     }
         
 	function onDeviceReady()
 	{
-       AppInfo.init();
+       CDVBundleInfo.init();
     }
     
     </script>
@@ -30,7 +49,14 @@
 	<h1>AppInfoGap Example</h1>
 	
       <label>Your App Version:</label>
-      <strong id="version">Version info here.</strong>
+      <div id="iconDiv">
+      <img id="icon" align="left" width="57"  style="border-radius:8px;" />
+      <div class="gloss"></div>
+      </div>
+      <h1 id="bundlename"></h1>
+      <h3 id="bundleid"></h3>
+      <em id="version">Version info here.</em> <br/>
+      
 	</ol>
   </body>
 </html>
