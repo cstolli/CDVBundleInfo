@@ -27,7 +27,7 @@ To Use CDVBundleInfo:
 1. in the OnDeviceReady event, add this code: "CDVBundleInfo.init();"
 2. add a function to your javascript called "BICallBack". 
 3. write code in this function to place the values in your HTML. Once you are in this function, the async cordova code has run, and has loaded the plist version and build values into a global object called "BundleInfo". Reference it in your code as mentioned above.
-4. you can also reference the Version object in your user events, or any other time after the AICallBack function has been called by the plugin.
+4. you can also reference the BundleInfo object in your user events, or any other time after the AICallBack function has been called by the plugin.
 
 
 To Improve CDVBundleInfo:
