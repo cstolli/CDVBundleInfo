@@ -1,7 +1,7 @@
 CDVBundleInfo
 =============
 
-A simple cordova IOS plugin for getting the App Icon (as base64 data uri!), launch image (also datauri!), bundle display name, bundle id, version number, and build number from XCode settings, and using them in Javascript/HTML to make your app's very official looking about page.  Never worry about updating those values or including those graphic assets again!
+A simple Cordova 1.7.0 IOS plugin for getting the App Icon (as base64 data uri!), launch image (also datauri!), bundle display name, bundle id, version number, and build number from XCode settings, and using them in Javascript/HTML to make your app's very official looking about page.  Never worry about updating those values or including those graphic assets again!
 
 
 Provides the Following plist values:
