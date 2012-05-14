@@ -74,11 +74,19 @@ static char base64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123
     NSString *bundleId = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
     NSString *bundleDisplayName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];      
     NSString *bundleIconPath = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIconFile"];
+    NSDictionary *bundleIOS5Icons = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIconFiles"];
     UIImage* iconImage = [UIImage imageNamed:bundleIconPath];
     NSData *iconURI = UIImagePNGRepresentation(iconImage);
     NSMutableString *bundleIconURI = [iconURI newStringInBase64FromData];
-   
-    stringToReturn = [NSString stringWithFormat: @"{\"version\":\"%@\", \"build\":\"%@\", \"bundleId\":\"%@\", \"bundleDisplayName\":\"%@\", \"bundleIconUri\":\"%@\"}", appVersion, buildNumber, bundleId, bundleDisplayName, bundleIconURI];
+    
+    UIImage* launchImage = [UIImage imageNamed:@"Default@2x~iphone.png"];
+    NSData *launchUri = UIImagePNGRepresentation(launchImage);
+    NSMutableString *bundleLaunchImage = [launchUri newStringInBase64FromData];
+    
+    bundleIconURI = [NSString stringWithFormat: @"data:image/png;base64,%@", bundleIconURI];
+    bundleLaunchImage = [NSString stringWithFormat: @"data:image/png;base64,%@", bundleLaunchImage];
+    
+    stringToReturn = [NSString stringWithFormat: @"{\"version\":\"%@\", \"build\":\"%@\", \"bundleId\":\"%@\", \"bundleDisplayName\":\"%@\", \"bundleIconUri\":\"%@\", \"bundlePhoneLaunchImage\":\"%@\"}", appVersion, buildNumber, bundleId, bundleDisplayName, bundleIconURI, bundleLaunchImage];
     
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
                                                       messageAsString: stringToReturn];

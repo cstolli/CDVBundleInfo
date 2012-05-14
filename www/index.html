@@ -36,6 +36,7 @@
         document.getElementById("icon").src = BundleInfo.bundleIconUri;
         document.getElementById("bundlename").innerHTML = BundleInfo.bundleDisplayName;
         document.getElementById("bundleid").innerHTML = BundleInfo.bundleId;
+        document.getElementById("launch").src = BundleInfo.bundlePhoneLaunchImage;
     }
         
 	function onDeviceReady()
@@ -46,9 +47,9 @@
     </script>
   </head>
   <body onload="onBodyLoad()">
-	<h1>AppInfoGap Example</h1>
 	
-      <label>Your App Version:</label>
+	
+      
       <div id="iconDiv">
       <img id="icon" align="left" width="57"  style="border-radius:8px;" />
       <div class="gloss"></div>
@@ -56,7 +57,7 @@
       <h1 id="bundlename"></h1>
       <h3 id="bundleid"></h3>
       <em id="version">Version info here.</em> <br/>
-      
+    <img id="launch"  width="320"/>
 	</ol>
   </body>
 </html>

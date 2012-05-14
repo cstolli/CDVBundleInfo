@@ -41,7 +41,6 @@
 		834C2719155EECF1009A9C9E /* CDVBundleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 834C2718155EECF1009A9C9E /* CDVBundleInfo.m */; };
 		834C271B155EED92009A9C9E /* www in Resources */ = {isa = PBXBuildFile; fileRef = 834C271A155EED92009A9C9E /* www */; };
 		834C2723155F3150009A9C9E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 834C2722155F3150009A9C9E /* README.md */; };
-		834C27301560DC7D009A9C9E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 834C272E1560DC2A009A9C9E /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -348,7 +347,6 @@
 				834C270C155EEAF9009A9C9E /* verify.sh in Resources */,
 				834C271B155EED92009A9C9E /* www in Resources */,
 				834C2723155F3150009A9C9E /* README.md in Resources */,
-				834C27301560DC7D009A9C9E /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

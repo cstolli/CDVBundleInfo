@@ -11,9 +11,9 @@ var BundleInfo = {revision : "", build : "", bundleDisplayName:"", bundleIconUri
 var CDVBundleInfo = {
     
     set_values : function (value) {
-        //console.log(value);
+       // console.log(value);
         BundleInfo = JSON.parse(value);
-        BundleInfo.bundleIconUri = "data:image/png;base64," + BundleInfo.bundleIconUri;
+        //BundleInfo.bundleIconUri = "data:image/png;base64," + BundleInfo.bundleIconUri;
         //console.log(BundleInfo.bundleDisplayName);
         BICallBack();
     },
