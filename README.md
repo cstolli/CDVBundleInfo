@@ -38,7 +38,7 @@ RoadMap:
 -------
 0. CHANGE NAME: BundleInfo, CDVBundleInfo, CDVPList, idk.  taking suggestions.
 1. Make it more proper, optimize/streamline client-app interface.  My obj-oriented javascript is limited to my JSON knowledge really.  Not sure of smoothest way to flatten this out.  
-2. IDEAL INTERFACE:  var MyInfo = new AppInfo(); alert(MyInfo.revision), etc.. I don't know JS well enough to figure out how to do this.  Async hell.
+2. IDEAL INTERFACE:  var myBundleInfo = new BundleInfo(); alert(myBundleInfo.version;), etc.. I don't know JS well enough to figure out how to do this.  Async hell.
 3. Add more plist info to more objects/properties (i.e. Icons.small, Icons.2x, Options.blah, Whatever.etc...)
 4. Improve possible expanded object model
 5. Get it included with cordova by default, cuz it really should be there.
